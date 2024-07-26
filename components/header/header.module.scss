@@ -6,7 +6,8 @@
     background: rgb(2,87,231);
     background: linear-gradient(90deg, rgba(2,87,231,1) 0%, rgba(51,111,238,1) 35%, rgba(0,189,255,0.6418942577030813) 100%);
     border-bottom: 0.5px solid white;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;
     justify-content: space-between;
 }
