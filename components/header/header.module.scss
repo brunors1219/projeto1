@@ -1,15 +1,25 @@
+@import "/styles/mixins/padding.scss";
 /*menu*/
 
 .conteiner{ /*backgroud do menu*/
-    padding: 7px 7px ;
+    @include Padding;
+    padding-top: 20px;
+    padding-bottom: 15px;
     width: 100%;
-    background: rgb(2,87,231);
-    background: linear-gradient(90deg, rgba(2,87,231,1) 0%, rgba(51,111,238,1) 35%, rgba(0,189,255,0.6418942577030813) 100%);
-    border-bottom: 0.5px solid white;
+    background: rgb(4,40,164);
+    background: linear-gradient(90deg, rgba(4,40,164,1) 0%, rgba(8,76,222,1) 35%, rgba(0,189,255,0.6418942577030813) 100%);
+    border-bottom: 0.5px solid blue;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     justify-content: space-between;
+    z-index: 100;
+}
+
+.menu{
+    a+a{
+        margin-left: 38.9px;
+    }
 }
 
 .logo img{ 

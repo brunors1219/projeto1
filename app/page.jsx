@@ -1,9 +1,11 @@
 import Header from "../components/header";
-import styles from "./page.scss";
+import Welcome from "../components/welcome";
+import styles from "./globais.scss";
 export default function Home() {
   return (
       <div className={styles.container}>
         <Header/>
+        <Welcome/>
       </div>
   );
 }

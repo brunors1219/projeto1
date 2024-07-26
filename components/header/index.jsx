@@ -6,7 +6,7 @@ import Styles from "./header.module.scss";
 const Header = () => {
     return <div className={Styles.conteiner}>
         <div className={Styles.logo}>
-            <Link href="/"><Image src={logo}/></Link>
+            <Link href="/"><Image src={logo} alt="logotipo"/></Link>
         </div>
         <div className={Styles.menu}>
             <Link href="/">Home</Link>
