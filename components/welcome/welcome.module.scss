@@ -3,9 +3,7 @@
 
 .container{
     @include Padding;
-    padding-top: 34px ;
-    padding-top: 34px;
-   
+    padding-top: 180px ;
     background-position: center;
     color: black;
     height: 100vh;
@@ -15,6 +13,8 @@
 
 .image{
     padding: 10px;
+    text-align: end;
+
 }
 /*Estilização texto pagina welcome*/
 .text{
