@@ -1,4 +1,8 @@
-import Style from "./objective.module.scss"
+import Style from "./objective.module.scss";
+import Image from "next/image";
+import Icon1 from "/public/img/icon1.png";
+import Icon2 from "/public/img/icon2.png";
+import Icon3 from "/public/img/icon3.png";
 
 
 const Objective = () => {
@@ -10,21 +14,30 @@ const Objective = () => {
             <div className={Style.cards}>
 
                 <div className={Style.card}>
-                    icon
+                    <Image src={Icon1} alt="icone" className={Style.icon}/>
+                    <h1>Renda fixa</h1>
+                    <p>Lorem ipsum, dolor sit tempora doloribus dignissimos non corrupti fuga rerum
+                        itaque repellat distinctio odit consequuntur.</p>
+                </div>
+
+                <div className={Style.card}>
+                    <Image src={Icon2} alt="icone" className={Style.icon}/>
                     <h1>Ações</h1>
                     <p>Lorem ipsum, dolor sit tempora doloribus dignissimos non corrupti fuga rerum
                         itaque repellat distinctio odit consequuntur.</p>
                 </div>
 
                 <div className={Style.card}>
-                    icon
-                    <h1>Ações</h1>
+                    <Image src={Icon3} alt="icone" className={Style.icon}/>
+                    <h1>ETFs</h1>
                     <p>Lorem ipsum, dolor sit tempora doloribus dignissimos non corrupti fuga rerum
                         itaque repellat distinctio odit consequuntur.</p>
                 </div>
 
-                <div className={Style.card}>icon
-                    <h1>Ações</h1>
+
+                <div className={Style.card}>
+                    <Image src={Icon3} alt="icone" className={Style.icon}/>
+                    <h1>Fundos imobiliario</h1>
                     <p>Lorem ipsum, dolor sit tempora doloribus dignissimos non corrupti fuga rerum
                         itaque repellat distinctio odit consequuntur.</p>
                 </div>

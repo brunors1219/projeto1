@@ -32,11 +32,12 @@
     font-size: 20px;
     color: white;
     text-align: center;
+    font-weight: bold;
     margin: 15px 15px;
 }
 
 .menu a:hover{
     color: black;
-    translate: 0.5s;
+    transition: 0.5s;
 }
 /*menu*/
