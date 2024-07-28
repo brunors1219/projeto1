@@ -15,7 +15,7 @@ const Objective = () => {
 
                 <div className={Style.card}>
                     <Image src={Icon1} alt="icone"/>
-                    <h1>Ações</h1>
+                    <h1>Renda Fixa</h1>
                     <p>Lorem ipsum, dolor sit tempora doloribus dignissimos non corrupti fuga rerum
                         itaque repellat distinctio odit consequuntur.</p>
                 </div>
@@ -29,14 +29,14 @@ const Objective = () => {
 
                 <div className={Style.card}>
                     <Image src={Icon3} alt="icone"/>
-                    <h1>Ações</h1>
+                    <h1>ETFs</h1>
                     <p>Lorem ipsum, dolor sit tempora doloribus dignissimos non corrupti fuga rerum
                         itaque repellat distinctio odit consequuntur.</p>
                 </div>
 
                 <div className={Style.card}>
                     <Image src={Icon3} alt="icone"/>
-                    <h1>Ações</h1>
+                    <h1>fundos</h1>
                     <p>Lorem ipsum, dolor sit tempora doloribus dignissimos non corrupti fuga rerum
                         itaque repellat distinctio odit consequuntur.</p>
                 </div>
