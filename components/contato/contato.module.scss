@@ -1,0 +1,72 @@
+@import "styles/mixins/padding.scss";
+
+.container{
+    @include Padding;
+    padding-top: 200px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 150px;
+}
+
+.text{
+    span{
+        font-size: 30;
+        font-weight: bold;
+        color: blue;
+    }
+
+    h1{
+        font-size: 65px;
+        font-weight: bold;
+    }
+
+    p{
+        font-size: 30px;
+        font-weight: 300;
+        opacity: 0.7;
+    }
+
+}
+
+.form{
+    padding: 38px 30px;
+    background-color: white;
+
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px black ;
+    
+    display: grid;
+    
+
+
+    h1{
+        font-size: 35px;
+        font-weight: bold;
+        
+    }
+    form{
+        display: grid;
+        gap: 23px;
+    }
+
+}
+.button{
+    margin-top: 20px;
+    padding: 21px;
+    width: 100%;
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    
+}
+
+.button:hover{
+    opacity: 0.7;
+    transition: 0.2s;
+    
+}
