@@ -1,8 +1,8 @@
 import Style from "./objective.module.scss";
 import Image from "next/image";
-import Icon1 from "/public/img/iconi.png";
-import Icon2 from "/public/img/iconii.png";
-import Icon3 from "/public/img/iconiii.png";
+import Icon1 from "/public/img/icon1.png";
+import Icon2 from "/public/img/icon2.png";
+import Icon3 from "/public/img/icon3.png";
 
 
 const Objective = () => {
