@@ -14,30 +14,29 @@ const Objective = () => {
             <div className={Style.cards}>
 
                 <div className={Style.card}>
-                    <Image src={Icon1} alt="icone" className={Style.icon}/>
-                    <h1>Renda fixa</h1>
-                    <p>Lorem ipsum, dolor sit tempora doloribus dignissimos non corrupti fuga rerum
-                        itaque repellat distinctio odit consequuntur.</p>
-                </div>
-
-                <div className={Style.card}>
-                    <Image src={Icon2} alt="icone" className={Style.icon}/>
+                    <Image src={Icon1} alt="icone"/>
                     <h1>Ações</h1>
                     <p>Lorem ipsum, dolor sit tempora doloribus dignissimos non corrupti fuga rerum
                         itaque repellat distinctio odit consequuntur.</p>
                 </div>
 
                 <div className={Style.card}>
-                    <Image src={Icon3} alt="icone" className={Style.icon}/>
-                    <h1>ETFs</h1>
+                    <Image src={Icon2} alt="icone"/>
+                    <h1>Ações</h1>
                     <p>Lorem ipsum, dolor sit tempora doloribus dignissimos non corrupti fuga rerum
                         itaque repellat distinctio odit consequuntur.</p>
                 </div>
 
+                <div className={Style.card}>
+                    <Image src={Icon3} alt="icone"/>
+                    <h1>Ações</h1>
+                    <p>Lorem ipsum, dolor sit tempora doloribus dignissimos non corrupti fuga rerum
+                        itaque repellat distinctio odit consequuntur.</p>
+                </div>
 
                 <div className={Style.card}>
-                    <Image src={Icon3} alt="icone" className={Style.icon}/>
-                    <h1>Fundos imobiliario</h1>
+                    <Image src={Icon3} alt="icone"/>
+                    <h1>Ações</h1>
                     <p>Lorem ipsum, dolor sit tempora doloribus dignissimos non corrupti fuga rerum
                         itaque repellat distinctio odit consequuntur.</p>
                 </div>
