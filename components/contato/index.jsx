@@ -35,11 +35,14 @@ const Contato = () => {
                     
                     <button className={Styles.button}>Enviar</button>
                 </form>
-
+                
 
             </div>
 
-
+            <div className={Styles.footer}>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        <span> Corporis debitis sapiente a.</span></p>
+            </div>
         </div>
     );
 

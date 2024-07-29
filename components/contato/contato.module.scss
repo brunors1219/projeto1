@@ -7,7 +7,8 @@
     grid-template-columns: repeat(2, 1fr);
     align-items: flex-start;
     justify-content: space-between;
-    gap: 150px;
+    gap: 15px 3rem;
+    margin-bottom: 10rem;
 }
 
 .text{
@@ -69,4 +70,18 @@
     opacity: 0.7;
     transition: 0.2s;
     
+}
+
+.footer{
+    grid-column-start: 2;
+    text-align: center;
+    font-size: 20px;
+    padding: 0 5rem;
+    line-height: 2rem;
+    color: grey;
+    
+    span{
+        color: rgb(12, 12, 12);
+        cursor: pointer;
+    }
 }

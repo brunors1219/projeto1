@@ -1,0 +1,19 @@
+@import "/styles/mixins/padding.scss";
+.container{
+    @include Padding;
+    padding-top: 72px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background: rgb(4,40,164);
+    background: linear-gradient(90deg, rgba(4,40,164,1) 0%, rgba(8,76,222,1) 35%, rgba(0,189,255,0.6418942577030813) 100%);
+    color: white;
+    border-top:  5px solid blue;
+}
+
+.column {
+    img{
+        width: 80px;
+        height: 80px;
+    }
+    
+}
