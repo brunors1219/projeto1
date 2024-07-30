@@ -21,7 +21,7 @@
     font-size: 41px;
 
     @include Phone{
-        font-size: 15px;
+        font-size: 20px;
     }
 }
 
@@ -29,7 +29,7 @@
     font-size: 30px;
 
     @include Phone{
-        font-size: 15px;
+        font-size: 22px;
     }
 }
 
@@ -37,6 +37,6 @@
     font-size: 22px;
 
     @include Phone{
-        font-size: 11px;
+        font-size: 15px;
     }
 }

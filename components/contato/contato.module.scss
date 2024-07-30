@@ -1,4 +1,6 @@
-@import "styles/mixins/padding.scss";
+@import "/styles/mixins/padding.scss";
+@import "/styles/mixins/fonts.scss";
+@import "/styles/mixins/responsive.scss";
 
 .container{
     @include Padding;
@@ -9,23 +11,27 @@
     justify-content: space-between;
     gap: 15px 3rem;
     margin-bottom: 10rem;
+
+    @include Phone{
+        grid-template-columns: 1fr;
+    }
 }
 
 .text{
     span{
-        font-size: 30;
+        @include SizeNormal;
         font-weight: bold;
         color: blue;
     }
 
     h1{
-        font-size: 65px;
+        @include SizeLarge;
         font-weight: bold;
     }
 
     p{
-        font-size: 30px;
-        font-weight: 300;
+        @include SizeNormal;
+        font-weight: 200;
         opacity: 0.7;
     }
 
@@ -34,22 +40,25 @@
 .form{
     padding: 38px 30px;
     background-color: white;
-
     border-radius: 10px;
     box-shadow: 5px 5px 10px black ;
-    
     display: grid;
     
 
 
     h1{
-        font-size: 35px;
+        @include SizeNormal;
         font-weight: bold;
         
     }
     form{
         display: grid;
         gap: 23px;
+    }
+
+    @include Phone{
+        padding: 1rem;
+        gap: 1rem;
     }
 
 }
@@ -61,7 +70,7 @@
     color: white;
     border-radius: 10px;
     border: none;
-    font-size: 16px;
+    @include SizeSmall;
     font-weight: bold;
     
 }
@@ -75,7 +84,7 @@
 .footer{
     grid-column-start: 2;
     text-align: center;
-    font-size: 20px;
+    @include SizeSmall;
     padding: 0 5rem;
     line-height: 2rem;
     color: grey;
@@ -83,5 +92,12 @@
     span{
         color: rgb(12, 12, 12);
         cursor: pointer;
+    }
+
+    @include Phone{
+        grid-column-start: 1;
+        padding: 0 1rem;
+        
+        line-height: 2rem;
     }
 }

@@ -1,10 +1,14 @@
+@import "/styles/mixins/fonts.scss";
+@import "/styles/mixins/responsive.scss";
+
 .select{
     padding: 22px 17px;
     background-color: #b9b9b95b;
     border: none;
-    font-size: 19px;
+    @include SizeSmall;
     font-weight: 300;
     color: #606060;
     opacity: 0.7;
     border-radius: 10px;
+
 }
