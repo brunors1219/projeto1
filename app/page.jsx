@@ -10,7 +10,7 @@ export default function Home() {
         <Header/>
         <Welcome/>
         <Objective/>
-        <Contato/>
+        {/*<Contato/>*/}
         {/*<Footer/>*/}
       </div>
   );
