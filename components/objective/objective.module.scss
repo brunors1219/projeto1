@@ -1,8 +1,12 @@
 @import "styles/mixins/padding.scss";
+@import "/styles/mixins/fonts.scss";
+@import "/styles/mixins/responsive.scss";
 
 
 .container{
     @include Padding;
+    padding-top: 60px;
+    background-color: rgba(0, 0, 255, 0.774);
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -12,48 +16,76 @@
     h1{
         text-align: center;
         width: 600px;
-        font-size: 65px;
+        @include SizeLarge;
         font-weight: bold;
+        color: white;
+
+        @include Phone{
+            width: 300px;
+        }
+    
     }
 
     p{
-        margin: 5rem;
+        margin: 4rem;
         width: 600px;
-        font-size: 20px;
+        @include SizeMedium;
         opacity: 0.7;
         text-align: center;
+        color: white;
+
+
+         @include Phone{
+            width: 300px;
+        }
     }
+        
+       
+    
+
 }
 .cards{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 68px;
+    gap: 40px;
+    padding-bottom: 50px;
+
+    @include Phone{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
 
 }
 .card{
     width: 500px;
-    height: 400px;
-    padding: 35px 32px;
+    height: 347px;
+    padding: 30px 30px;
     background-color: white;
     border-radius: 5px;
     box-shadow: 5px 5px 10px black ;
-
+    
 
     h1{
         font-weight: bold;
-        font-size: 41px;
+        @include SizeNormal;
         color: black;
         width: auto;
         text-align: left;
     }
     
     p{
-        font-size: 20px;
+        @include SizeSmall;
         color: black;
         opacity: 0.7;
         width: auto;
         text-align: left;
         margin: 0;
+    }
+
+    @include Phone{
+        width: 100%;
+        height: 100%;
+        padding: 20px;
     }
 }
 

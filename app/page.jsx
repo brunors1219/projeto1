@@ -11,7 +11,7 @@ export default function Home() {
         <Welcome/>
         <Objective/>
         <Contato/>
-        <Footer/>
+        {/*<Footer/>*/}
       </div>
   );
 }

@@ -1,31 +1,41 @@
 @import "/styles/mixins/padding.scss";
-
+@import "/styles/mixins/responsive.scss";
+@import "/styles/mixins/fonts.scss";
 
 .container{
     @include Padding;
-    padding-top: 180px ;
+    padding-top: 100px;
     background-position: center;
     color: black;
-    height: 100vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-}
 
-.image{
-    padding: 10px;
-    text-align: end;
-
+    @include Phone{
+        grid-template-columns: 1fr;
+        
+    }
 }
 /*Estilização texto pagina welcome*/
 .text{
-    h2{
-        font-weight: bold;
-        font-size: 71px;
+    h1{
+        @include SizeLarge
     }
 
     p{
-        font-size: 30px;
-        opacity: 0.8;
+        @include SizeMedium;
+        
+    }
+
+         
+}
+
+@include Phone{
+    .image img{
+        width: 300px;
+        height: 300px;
+        align-items: center;
+        justify-content: center;
     }
 }
+
 
