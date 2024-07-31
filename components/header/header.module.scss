@@ -1,5 +1,6 @@
 @import "/styles/mixins/padding.scss";
 @import "/styles/mixins/responsive.scss";
+@import "/styles/mixins/fonts.scss";
 /*menu*/
 
 .conteiner{ /*backgroud do menu*/
@@ -30,7 +31,12 @@
         margin-left: 38.9px;
     }
     @include Phone{
-        display: none;
+        a+a{
+            margin-left: 2px;
+        }
+
+        @include SizeSmall;
+        
     }
 }
 
@@ -41,7 +47,7 @@
 }
 
 .menu a{
-    font-size: 20px;
+    @include SizeNormal;
     color: white;
     text-align: center;
     font-weight: bold;

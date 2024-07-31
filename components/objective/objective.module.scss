@@ -23,7 +23,6 @@
         @include Phone{
             width: 300px;
         }
-    
     }
 
     p{
@@ -40,7 +39,9 @@
         }
     }
         
-       
+    @include Tablet{
+        padding: 6rem;
+    }
     
 
 }

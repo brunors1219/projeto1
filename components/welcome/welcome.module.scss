@@ -12,8 +12,20 @@
 
     @include Phone{
         grid-template-columns: 1fr;
+        grid-template-rows: max-content;
         
     }
+
+    @include Tablet{
+        padding-top: 2rem;
+    }
+
+    @include Laptop{
+        padding-top: 6rem;
+     }
+    
+
+
 }
 /*Estilização texto pagina welcome*/
 .text{
@@ -31,7 +43,7 @@
 
 @include Phone{
     .image img{
-        width: 300px;
+        width: 340px;
         height: 300px;
         align-items: center;
         justify-content: center;
