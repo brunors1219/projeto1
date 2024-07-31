@@ -1,10 +1,18 @@
 @import "./responsive.scss";
 
 @mixin SizeExtra{
-    font-size: 71px;
+    font-size: 60px;
 
     @include Phone{
         font-size: 35px;
+    }
+
+    @include Tablet{
+        font-size: 45px;
+    }
+
+    @include Laptop{
+        font-size: 48px;
     }
 }
 
@@ -14,14 +22,30 @@
     @include Phone{
         font-size: 32px;
     }
+
+    @include Tablet{
+        font-size: 40px;
+    }
+
+    @include Laptop{
+        font-size: 40px;
+    }
 }
 
 
 @mixin SizeMedium{
-    font-size: 41px;
+    font-size: 35px;
 
     @include Phone{
-        font-size: 20px;
+        font-size: 15px;
+    }
+
+    @include Tablet{
+        font-size: 23px;
+    }
+
+    @include Laptop{
+        font-size: 30px;
     }
 }
 
@@ -29,7 +53,16 @@
     font-size: 30px;
 
     @include Phone{
-        font-size: 22px;
+        font-size: 15px;
+    }
+
+    
+    @include Tablet{
+        font-size: 15px;
+    }
+
+    @include Laptop{
+        font-size: 23px;
     }
 }
 
@@ -38,5 +71,13 @@
 
     @include Phone{
         font-size: 15px;
+    }
+
+    @include Tablet{
+        font-size: 15px;
+    }
+
+    @include Laptop{
+        font-size: 18px;
     }
 }

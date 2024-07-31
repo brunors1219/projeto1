@@ -57,8 +57,10 @@
 
 }
 .card{
-    width: 500px;
-    height: 347px;
+    max-width: 500px;
+    max-height: 347px;
+    width: 100%;
+    height: 100%;
     padding: 30px 30px;
     background-color: white;
     border-radius: 5px;
@@ -83,8 +85,6 @@
     }
 
     @include Phone{
-        width: 100%;
-        height: 100%;
         padding: 20px;
     }
 }
