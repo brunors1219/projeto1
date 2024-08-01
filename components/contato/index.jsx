@@ -24,8 +24,8 @@ const Contato = () => {
                 <h1>Fale com um especialista</h1>
                 
                 <form action="https://formsubmit.co/bww963w@gmail.com" method="POST">
-                    <Input type="text" placeholder="Nome" name="nome" required/>
-                    <Input type="email" placeholder="Email" name="email" required/>
+                    <Input type="text" name="nome" placeholder="Nome" required/>
+                    <Input type="email" name="email" placeholder="Email"  required/>
                     <Input type="text"
                     placeholder="Numero Whatsapp"  
                     pattern="^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$"
