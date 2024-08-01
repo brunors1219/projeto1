@@ -4,7 +4,7 @@ import Banner from "/public/img/banner.png"
 
 const Welcome = () => {
     return (
-        <div className={Styles.container}>
+        <div id="welcome" className={Styles.container}>
 
             <div className={Styles.text}>
                 <h1>Melhor site para seu investimento</h1>

@@ -1,4 +1,4 @@
-
+import { PatternFormat } from 'react-number-format';
 import Input from "../input";
 import Select from "../select";
 import Styles from "./contato.module.scss";
@@ -8,7 +8,7 @@ import Styles from "./contato.module.scss";
 const Contato = () => {
 
     return (
-        <div className={Styles.container}>
+        <div id="contato" className={Styles.container}>
             <div className={Styles.text}>
                 <span>ENTRE EM CONTATO</span>
                 <h1>Aumenta sua lucratividade</h1>
@@ -21,9 +21,9 @@ const Contato = () => {
                 <form action="https://formsubmit.co/bww963w@gmail.com" method="POST">
                     <Input type="text" name="nome" placeholder="Nome" required/>
                     <Input type="email" name="email" placeholder="Email"  required/>
-                    <Input type="text" name= "Numero Whatsapp"
-                    placeholder="Numero Whatsapp"  
-                    pattern="\(\d{2}\) \d{1-5}-\d{4}"
+                    <Input type="number" name= "Numero Whatsapp"
+                    placeholder="telefone"  
+                    PatternFormat
                     required/>
 
                     <Select type="text" name= "Seleciona investimento" placeholder="Escolha tipo de invenstimento" option=

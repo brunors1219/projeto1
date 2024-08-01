@@ -7,7 +7,7 @@ import Icon3 from "/public/img/Icon3.png";
 
 const Objective = () => {
     return (
-        <div className={Style.container}>
+        <div id="objective" className={Style.container}>
             <h1>Nosso objetivos</h1>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis dolorum excepturi earum voluptates</p>
             
