@@ -19,8 +19,8 @@ const Footer = () => {
 
             <div className={Styles.column}>
                 <h1>Menu</h1>
-                <p>Bem vindo</p>
-                <p>Objetivo</p>
+                <Link><p>Bem vindo </p></Link>
+                <Link><p>Objetivo</p></Link>
             </div>
 
             <div className={Styles.column}>
