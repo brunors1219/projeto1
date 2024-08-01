@@ -26,7 +26,7 @@ const Contato = () => {
                     pattern="\(\d{2}\) \d{1-5}-\d{4}"
                     required/>
 
-                    <Select name= "Seleciona investimento" placeholder="Escolha tipo de invenstimento" option=
+                    <Select type="text" name= "Seleciona investimento" placeholder="Escolha tipo de invenstimento" option=
                     {[
                     {label: "Ações", valeu: "ações"},
                     {label: "ETF", valeu: "ETFs"},
