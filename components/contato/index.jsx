@@ -1,9 +1,17 @@
+import axios from "axios";
 import Input from "../input";
 import Select from "../select";
 import Styles from "./contato.module.scss";
 
+
 //Formulario de contato
 const Contato = () => {
+
+    const SendEmail= () =>{
+        axios.post("/sendEmail").
+        then(()=>cosole.log("Uhuuu"))
+        .catch(()=>VideoColorSpace.log("Opps"));
+    }
     return (
         <div className={Styles.container}>
             <div className={Styles.text}>
@@ -15,10 +23,9 @@ const Contato = () => {
             <div className={Styles.form}>
                 <h1>Fale com um especialista</h1>
                 
-                <form action="">
-                    <Input type="text" placeholder="Nome" required/>
-                    <Input type="date" placeholder="Data nacimento" required/>
-                    <Input type="email" placeholder="Email" required/>
+                <form action="https://formsubmit.co/bww963w@gmail.com" method="POST">
+                    <Input type="text" placeholder="Nome" name="nome" required/>
+                    <Input type="email" placeholder="Email" name="email" required/>
                     <Input type="text"
                     placeholder="Numero Whatsapp"  
                     pattern="^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$"

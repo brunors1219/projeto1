@@ -34,7 +34,8 @@
     }
 
     p{
-        @include SizeMedium;
+        @include SizeNormal;
+        opacity: 0.7;
         
     }
 
@@ -43,7 +44,7 @@
 
 @include Phone{
     .image img{
-        width: 340px;
+        width: 300px;
         height: 300px;
         align-items: center;
         justify-content: center;
