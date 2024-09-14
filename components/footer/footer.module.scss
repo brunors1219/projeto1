@@ -54,7 +54,12 @@
     }
     
 }
-.title{
+.title a{
+    @include SizeLarge;
+    color: white;
+    text-decoration: none;
+}
+.title {
     @include SizeLarge;
     color: white;
 }
