@@ -11,7 +11,7 @@ export default async function handler(req, res) {
 try {
 	const message = await client.sendAsync({
 		text: 'Bem Vindo',
-		from: 'brunors1219@gmail.com',
+		from: 'bww963w@gmail.com',
 		to: 'brunors1219@gmail.com',
 		subject: 'teste',
 	});

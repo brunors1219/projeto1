@@ -1,3 +1,5 @@
+"use client";
+
 import axios from "axios";
 import Input from "../input";
 import Select from "../select";
@@ -7,9 +9,9 @@ import Styles from "./contato.module.scss";
 //Formulario de contato
 const Contato = () => {
 
-    const Email = () => {
+    const Email = ()=>{
         axios
-        .post("/sendEmail")
+        .post("/api/sendEmail")
         .then(()=>console.log("Uhhh"))
         .catch(()=>console.log("Erro"));
     };
@@ -25,7 +27,7 @@ const Contato = () => {
             <div className={Styles.form}>
                 <h1>Fale com um especialista</h1>
                 
-                <form>
+                <form onSubmit={Email}>
                     <Input type="text" name="nome" placeholder="Nome" required/>
                     <Input type="email" name="email" placeholder="Email"  required/>
                     <Input type="number" name= "Numero Whatsapp"
@@ -42,7 +44,7 @@ const Contato = () => {
 
                     ]} required/>
                     
-                    <button className={Styles.button} onClick={Email}>Enviar</button>
+                    <button className={Styles.button}>Enviar</button>
                 </form>
                 
 
